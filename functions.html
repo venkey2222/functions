@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 1: Greeting Function
+//Scenario: Create a function that takes a name as an argument and returns a greeting message.
+//Task:
+//Define a function greet that takes one parameter name.
+//The function should print a greeting message like “Hello, [name]!”.
+//Call the function with different names and print the results.
+
+
+
+
+  name=prompt("enter your name")
+  function greet(a){
+    console.log("welcome",a);
+  }
+  greet(name)
+            
+//             // a=5;
+//             // b=5;
+//             //  function num(){
+//             //     console.log(a+b);
+                
+//             //  }
+//             //  num()
+             
+
+//             //  function fun(a){
+//             //     console.log(a)
+//             //  }
+
+// //             Task 1: Square Function
+// // Scenario: Create a function that takes a number as an argument and returns its square.
+// // Task:
+// // Define a function square that takes one parameter num.
+// // The function should return the square of num.
+// // Call the function with different numbers and print the results.
+
+num=prompt("enter a number")
+function square(a){
+    console.log(a*a);
+    
+
+}
+square(num)
+
+
+// Task 2: Average Function
+// Scenario: Create a function that takes an array of numbers as an argument
+//  and returns the average.
+// Task:
+// hint:[2,5,2] =9/3=3
+// Define a function average that takes one parameter arr.
+// The function should return the average of the numbers in arr.
+// Call the function with different arrays and print the results.
+
+function average(arr) {
+    return arr.reduce
+    ((sum,num) => sum + num,0) 
+    / arr.length;
+}
+console.log(average([2, 5, 2]));  
+console.log(average([1, 4, 3, 8]));  
+console.log(average([10, 20, 30, 40, 50])); 
+
+
+
+// Task 3:  Vowels Function
+// Scenario: Create a function that takes a string as an argument and returns weather the strings contains vowels or not .
+// Task:
+// Define a function that takes one parameter str.
+// The function should return whether the string contains vowels or not.
+// use loops and if conditions
+// Call the function with different strings and print the results.
+// hello --a,e ,i ,o,u---it contains vowels
+// hll---it does not contains vowels
+
+function vowels(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i].toLowerCase())) {
+            return "It contains vowels";
+        }
+    }
+    
+    return "It does not contain vowels";
+}
+console.log(vowels("hello"));  
+console.log(vowels("hll"));   
+console.log(vowels("sky"));    
+console.log(vowels("venkey")); 
+
+
+
+
+// Task 4: Temperature Converter
+// Scenario: Create a function that converts temperatures between Celsius and Fahrenheit.
+// Task:
+// Define a function convertTemperature that takes two parameters: temp (the temperature) and scale (the scale to convert to, either “C” or “F”).
+// The function should return the converted temperature.
+// Test the function with different temperatures and scales and print the results.
+// Hints:-
+// formula for celsius (temp - 32) * 5/9
+// formula for fahrenheit (temp * 9/5) + 32
+
+giv=prompt("enter the temp")
+fah=prompt("enter scale")
+function converter(temp,scale){
+    console.log((temp - 32) * 5/9);
+    console.log(( scale* 9/5) + 32);
+}
+converter(giv,fah)
+
+
+
+
+
+
+             
+    </script>
+</body>
+</html>
